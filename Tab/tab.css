@@ -1,0 +1,33 @@
+.tabs {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+.tablinks.active {
+  border-bottom: 3px solid #4caf50;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: none;
+}
+
+.tabcontent h3 {
+  margin-top: 0;
+}
