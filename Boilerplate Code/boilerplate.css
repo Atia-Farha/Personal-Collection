@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +7,22 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Root Variables */
+:root {
+  --primary-color: black;
+  --font-size: ;
+}
+
+/* Body Styling */
 body {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--primary-color);
 }
 
+/* Media Query for Responsive Design */
 @media all and (max-width: 795px) {
   
 }
