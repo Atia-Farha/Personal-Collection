@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" xml:lang="en">
 
 <head>
     <!-- Basic Meta Tags -->
@@ -7,8 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
-    <!-- Title and Description -->
-    <title>Website Title</title> 
+    <!-- Base Tag to avoid broken links -->
+    <base href="https://www.website.com/">
+ 
+    <!-- Title -->
+    <title>Website Title</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Website Title",
+      "description": "A brief description about the website's content",
+      "url": "https://www.website.com"
+    }
+    </script>
+
+    <!-- Description -->
     <meta name="description" content="A brief description about website's content.">
 
     <!-- Keywords -->
@@ -34,10 +50,6 @@
     <!-- Canonical Tag (to avoid duplicate content issues) -->
     <link rel="canonical" href="https://www.website.com">
 
-    <!-- Robots Meta Tag -->
-    <meta name="robots" content="index, follow">
-    <!-- This allows search engines to index the page and follow the links on it. -->
-
     <!-- Favicons -->
     <!-- Standard favicon (16x16) -->
     <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
@@ -60,6 +72,10 @@
     <!-- ICO format for legacy support (16x16 and 32x32 sizes) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow">
+    <!-- This allows search engines to index the page and follow the links on it. --> 
+
     <!-- Verification -->
     <!-- For Google Search Console --> 
     <meta name="google-site-verification" content="your-google-site-verification-code">
@@ -80,7 +96,19 @@
     <script src="script.js" defer></script>
 </head>
 
-<body role="main">
+<body>
+    <noscript>
+  <style>
+    .noscript-warning {
+      display: block;
+      background-color: red;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <div class="noscript-warning">This website requires JavaScript to function correctly. Please enable it in your browser settings.</div>
+</noscript>
     <!-- Main HTML Content -->
 </body>
 
