@@ -1,4 +1,4 @@
-document.querySelector(".button").onclick = function(e) {
+document.querySelector(".ripple-effect").onclick = function(e) {
     let ripple = document.createElement("span");
     ripple.className = "ripple";
     ripple.style.left = `${e.offsetX - 50}px`;
